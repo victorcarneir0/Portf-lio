@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+  
+    <div>
+        <div class="blocoCentral">
+            <header>
+                <div class="Logo">
+                    <img src="./Images/logoVictor.png" alt="">
+                </div>
+
+                <div class="Rel">
+                    <a href="#SobrePag">Sobre mim</a>
+                    <a href="#competenciasPag">Competências</a>
+                    <a href="#contato" class="Fundo">Entre em contato</a>
+                </div>
+
+            </header>
+
+            <div class="Principal">
+
+                <div class="AboutMe">
+                    <div class="Textos">
+                            <h2>Olá! Eu sou</h2>
+                            <h1>Victor Carneiro</h1>
+                            <h3>Análista e Desenvolvedor de Sistemas</h3>
+                    </div>
+
+                        <div class="Links">
+                            <div id="Linkedin">
+                                <a href="https://www.linkedin.com/in/victor-carneiro-silva/"><img src="./Images/linkedinBranco.png" alt="Linkedin"></a>
+                            </div>
+                            <div id="Github">
+                                <a href="https://github.com/victorcarneir0"><img src="./Images/githubBranco.png" alt="GitHub"></a>
+                            </div>
+                        </div>
+                </div>
+                
+                <div id="ImageMe">
+                    <img src="./Images/file_00000000280c820eb3a9f170688814d5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="Sobre" id="SobrePag">
+            <div class="sobreImagem">
+                <img src="./Images/imgAbout.png" alt="">
+            </div>
+            <div class="sobreInformacoes">
+                <div class="informacoesTitle">
+                    <h1>Sobre Mim</h1>
+                </div>
+                <div class="informacoesTexto">
+                    <p>Sou estudante de tecnologia e desenvolvedor em formação.
+                    Tenho interesse em desenvolvimento <span>back-end</span> pratico as habilidades necessárias na área enquanto aprimoro meus conhecimentos.</p>
+
+                    <ul>
+                        <li>Comunicação</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Facilidade em adaptação</li>
+                        <li>Liderança</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="competencias" id="competenciasPag">
+            <div class="competenciasTitle">
+                <h1>Hards skills</h1>
+                <p>Tecnologias que utilizo</p>
+            </div>
+            <div class="competenciasImages">
+                <div class="competenciasHtml">
+                    <p>Html</p>
+                    <img src="./Images/htmlPng.png" alt="">
+                </div>
+
+                <div class="competenciasCss">
+                <p>CSS</p>
+                <img src="./Images/cssPng.png" alt="">
+                </div>
+
+                <div class="competenciasJs">
+                <p>Java Script</p>
+                <img src="./Images/jsPng.png" alt="">
+                </div>
+
+                <div class="competenciasPython">
+                <p>Python</p>
+                <img src="./Images/pythonPng.png" alt="">
+                </div>
+
+                <div class="competenciasPostgre">
+                <p>Postgre</p>
+                <img src="./Images/postgrePng.png" alt="">
+                </div>
+
+                <div class="competenciasC">
+                <p>C</p>
+                <img src="./Images/cPng.png" alt="">     
+                </div>
+            </div>
+        </div>
+
+    <section id="contato" class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+
+            <h2 class="text-center mb-4">Entre em contato</h2>
+
+            <form action="https://formspree.io/f/xyezbbny" method="POST">
+
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@email.com" required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

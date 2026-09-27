@@ -1,0 +1,1040 @@
+@font-face{
+    font-family: Poppins400;
+    src: url(../Fonts/Poppins-Medium.ttf);
+
+    font-family: NotoSans;
+    src: url(../Fonts/NotoSans.ttf)
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    margin: 0;  
+    background-color: #1A1A24;
+    padding: 0;
+}
+
+header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: #1A1A24;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo{
+    width: 40%;
+}
+
+.Logo img{
+    margin-left: 15%;
+    width: 150px;
+}
+
+.Rel{
+    justify-content: space-around;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 20px;
+
+}
+
+.Rel a{
+    font-weight: bold;
+    color: rgb(224, 221, 221);
+    margin-right: -10%;
+    text-decoration: none;
+}
+
+.Rel a:hover{
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.Rel a:nth-child(3){
+    color: rgb(0, 0, 0);
+    background-color: rgb(224, 221, 221);
+    padding: 20px;
+    border-radius: 70px;
+}
+
+.Rel a:nth-child(3):hover{
+    transition: 0.2s;
+    background-color: #ffffff;
+}
+
+
+.Principal{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    min-height: 90vh;
+}
+
+
+
+.Textos h1{
+    color: #ffffff;
+    margin: 0;
+    font-size: 110px;
+}
+
+.Textos h3{
+    font-size: 30px;
+    color: #774dbb;
+}
+
+.Textos h2{
+    color: white;
+    font-size: 40px;
+
+}
+
+
+.blocoCentral{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(100deg,#1A1A24 50%, #0b0b11 50%);    
+}
+
+.AboutMe{
+    margin-top: 10%;
+    margin-left: 3%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#Github img{
+    border: 0px 0px 3px 0px solid;
+    padding: 10px;
+    width: 80px;
+}
+
+#Linkedin img{
+    padding: 10px;
+    width: 80px;
+}
+
+.Links img{
+    box-shadow: #0f0f16;
+    background-color: #22222F;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.Links{
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+
+.Links img:hover{
+    background-color: #20202e;
+    border: 1px solid rgb(146, 0, 204);
+
+}
+
+.Textos{
+    margin: 100px 0px 0px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#ImageMe{
+    position: relative;
+    top: 250px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#ImageMe img{
+    width: 100%;
+    height: 90vh;
+}
+
+.Sobre{
+    margin-top: 5%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobreImagem{
+    width: 50%;
+}
+.sobreImagem img{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.sobreInformacoes{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.informacoesTitle{
+    color: white;
+}
+
+.informacoesTexto{
+    margin-bottom: 10%;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.informacoesTitle h1{
+    max-width: 520px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8B5CF6;
+    margin-bottom: 12px;
+    font-size: 60px;
+}
+
+.informacoesTexto p{
+    max-width: 700px;
+    font-size: 30px;
+}
+
+.informacoesTexto span{
+    font-weight: bold;
+    color: #8B5CF6;
+}
+
+.informacoesTexto li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 8px;
+    font-size: 30px;
+}
+
+
+.informacoesTexto li::before {
+    background-image: url("../Images/check.png");
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+.competencias{
+    background-color: #0b0b11;
+    height: 800px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.competenciasTitle{
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+}
+
+.competenciasTitle h1{ 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8B5CF6;
+    margin-bottom: 12px;
+    font-size: 60px;
+}
+
+.competenciasTitle p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: 100%;
+    font-size: 30px;
+}
+
+.competenciasImages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.competenciasImages img {
+
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+.competenciasImages img:nth-child(5) {
+    object-fit: contain;
+    width: 120px;
+    height: 120px;
+}
+
+.competenciasImages img:hover{
+    background-color: #20202e;
+}
+
+.competenciasImages p{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+#contato {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+    padding: 80px 20px;
+    height: 100%;
+}
+
+
+#contato h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8B5CF6;
+    margin-bottom: 12px;
+    font-size: 60px;
+    margin-bottom: 12px;
+}
+
+#contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contato .form-label {
+    color: #d6d6df;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+#contato .form-control {
+    background-color: #22222f;
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+
+    padding: 13px 15px;
+
+    transition: 0.3s ease;
+}
+
+#contato .form-control::placeholder {
+    color: #7c7c8a;
+}
+
+#contato .form-control:focus {
+    background-color: #22222f;
+    color: white;
+
+    border-color: #8b5cf6;
+
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+
+    outline: none;
+}
+
+#contato textarea.form-control {
+    resize: none;
+    min-height: 140px;
+}
+
+#contato .btn {
+    width: 100%;
+
+    background-color: #8b5cf6;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+#contato .btn:hover {
+    background-color: #7442e8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25);
+}
+
+
+@media (max-width: 600px) {
+
+    .Textos h1 {
+        font-size: 20px;
+    }
+
+    .Textos h2 {
+        font-size: 10px;
+    }
+
+    .Textos h3 {
+        font-size: 10px;
+    }
+
+    .Rel {
+        margin-right: 20px;
+        font-size: 1px;
+    }
+
+    .Sobre {
+        height: auto;
+        padding: 100px 30px;
+    }
+
+    .informacoesTexto p {
+        font-size: 24px;
+    }
+
+    .informacoesTexto li {
+        font-size: 24px;
+    }
+
+    .competenciasImages {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .Logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Logo img {
+        margin-left: 0;
+        width: 110px;
+    }
+
+    .Rel {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .Rel a {
+        margin-right: 0;
+    }
+
+    .Rel a:nth-child(3) {
+        padding: 10px 14px;
+    }
+
+    .blocoCentral {
+        min-height: auto;
+        background: #1A1A24;
+    }
+
+    .Principal {
+        height: auto;
+        flex-direction: column;
+        padding: 50px 20px 0;
+    }
+
+    .AboutMe {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-items: center;
+    }
+
+    .Textos {
+        margin: 30px 0 0 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Textos h1 {
+        font-size: 42px;
+    }
+
+    .Textos h2 {
+        font-size: 24px;
+    }
+
+    .Textos h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .Links {
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .Links img,
+    #Github img,
+    #Linkedin img {
+        width: 55px;
+        margin: 0 10px;
+    }
+
+    #ImageMe {
+        top: 0;
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #ImageMe img {
+        width: 90%;
+        height: auto;
+    }
+
+    .Sobre {
+        height: auto;
+        flex-direction: column;
+        padding: 70px 20px;
+        margin-top: 0;
+    }
+
+    .sobreImagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobreImagem img {
+        margin-left: 0;
+        width: 95%;
+    }
+
+    .sobreInformacoes {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .informacoesTitle h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .informacoesTexto p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .informacoesTexto li {
+        font-size: 17px;
+    }
+
+    .competencias {
+        height: auto;
+        padding: 70px 20px;
+        gap: 45px;
+    }
+
+    .competenciasTitle h1 {
+        font-size: 36px;
+    }
+
+    .competenciasTitle p {
+        font-size: 20px;
+    }
+
+    .competenciasImages {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .competenciasImages img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .competenciasImages p {
+        font-size: 16px;
+    }
+
+    #contato {
+        width: 92%;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding: 45px 15px;
+    }
+
+    #contato h2 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .Logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Logo img {
+        margin-left: 0;
+        width: 125px;
+    }
+
+    .Rel {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        font-size: 15px;
+    }
+
+    .Rel a {
+        margin-right: 0;
+    }
+
+    .Principal {
+        height: auto;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .AboutMe {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .Textos {
+        margin: 40px 0 0 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Textos h1 {
+        font-size: 52px;
+    }
+
+    .Textos h2 {
+        font-size: 28px;
+    }
+
+    .Textos h3 {
+        font-size: 20px;
+    }
+
+    .Links {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #ImageMe {
+        top: 0;
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #ImageMe img {
+        width: 75%;
+        height: auto;
+    }
+
+    .Sobre {
+        height: auto;
+        flex-direction: column;
+        padding: 80px 30px;
+    }
+
+    .sobreImagem,
+    .sobreInformacoes {
+        width: 100%;
+    }
+
+    .sobreImagem {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobreImagem img {
+        margin-left: 0;
+        width: 85%;
+    }
+
+    .sobreInformacoes {
+        margin-top: 50px;
+    }
+
+    .informacoesTitle h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .informacoesTexto p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .informacoesTexto li {
+        font-size: 19px;
+    }
+
+    .competencias {
+        height: auto;
+        padding: 80px 30px;
+    }
+
+    .competenciasImages {
+        flex-wrap: wrap;
+    }
+
+    .competenciasImages img {
+        width: 95px;
+        height: 95px;
+    }
+
+    #contato {
+        width: 90%;
+    }
+
+    #contato h2 {
+        font-size: 38px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    header {
+        padding: 0 30px;
+    }
+
+    .Logo img {
+        margin-left: 0;
+        width: 130px;
+    }
+
+    .Rel {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .Rel a {
+        margin-right: 0;
+    }
+
+    .Principal {
+        height: 650px;
+    }
+
+    .AboutMe {
+        width: 55%;
+        margin-left: 2%;
+    }
+
+    .Textos {
+        margin-left: 0;
+    }
+
+    .Textos h1 {
+        font-size: 65px;
+    }
+
+    .Textos h2 {
+        font-size: 30px;
+    }
+
+    .Textos h3 {
+        font-size: 22px;
+    }
+
+    #ImageMe {
+        top: 140px;
+        width: 45%;
+    }
+
+    #ImageMe img {
+        height: 70vh;
+    }
+
+    .Sobre {
+        height: auto;
+        padding: 100px 40px;
+        gap: 40px;
+    }
+
+    .sobreImagem img {
+        margin-left: 0;
+        width: 95%;
+    }
+
+    .informacoesTitle h1 {
+        font-size: 48px;
+    }
+
+    .informacoesTexto p {
+        font-size: 22px;
+    }
+
+    .informacoesTexto li {
+        font-size: 21px;
+    }
+
+    .competencias {
+        height: auto;
+        padding: 100px 40px;
+    }
+
+    .competenciasImages {
+        flex-wrap: wrap;
+    }
+
+    .competenciasImages img {
+        width: 105px;
+        height: 105px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .Rel {
+        width: 55%;
+        font-size: 17px;
+    }
+
+    .Rel a {
+        margin-right: 0;
+    }
+
+    .Textos h1 {
+        font-size: 80px;
+    }
+
+    .Textos h2 {
+        font-size: 34px;
+    }
+
+    .Textos h3 {
+        font-size: 25px;
+    }
+
+    #ImageMe {
+        top: 190px;
+    }
+
+    #ImageMe img {
+        height: 80vh;
+    }
+
+    .Sobre {
+        height: auto;
+        min-height: 850px;
+        padding: 80px 50px;
+    }
+
+    .informacoesTitle h1 {
+        font-size: 52px;
+    }
+
+    .informacoesTexto p {
+        font-size: 25px;
+    }
+
+    .informacoesTexto li {
+        font-size: 23px;
+    }
+
+    .competenciasImages {
+        gap: 22px;
+    }
+
+    .competenciasImages img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    .Textos h1 {
+        font-size: 95px;
+    }
+
+    .Textos h2 {
+        font-size: 36px;
+    }
+
+    .Textos h3 {
+        font-size: 27px;
+    }
+
+    #ImageMe img {
+        height: 85vh;
+    }
+
+    .Sobre {
+        height: 900px;
+    }
+
+    .informacoesTexto p {
+        font-size: 27px;
+    }
+
+    .informacoesTexto li {
+        font-size: 26px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    .Textos h1 {
+        font-size: 110px;
+    }
+
+    .Textos h2 {
+        font-size: 40px;
+    }
+
+    .Textos h3 {
+        font-size: 30px;
+    }
+
+    .Principal {
+        height: 700px;
+    }
+
+    #ImageMe img {
+        height: 90vh;
+    }
+
+    .Sobre {
+        height: 1000px;
+    }
+
+    .competencias {
+        height: 800px;
+    }
+
+    .competenciasImages img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .Rel a {
+        margin-right: 0;
+    }
+
+    .Logo img {
+        margin-left: 0;
+    }
+
+    .sobreImagem img {
+        margin-left: 0;
+    }
+
+    #ImageMe {
+        top: 0;
+    }
+
+    .competenciasImages {
+        flex-wrap: wrap;
+    }
+}
+
+
+#ImageMe {
+    top: 0;
+}
+
+#ImageMe img {
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+}
