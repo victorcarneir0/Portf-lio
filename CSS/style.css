@@ -117,16 +117,17 @@ header{
     background: linear-gradient(100deg,#1A1A24 50%, #0b0b11 50%);    
 }
 
-.AboutMe{
-    margin-top: 10%;
-    margin-left: 3%;
-    height: 100%;
+.AboutMe {
+    margin-top: 0;
+    height: auto;
     width: 50%;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
+    justify-content: center;
 
+    gap: 80px;
+}
 
 #Github img{
     border: 0px 0px 3px 0px solid;
@@ -174,19 +175,6 @@ header{
     display: flex;
     align-items: end;
     justify-content: end;
-}
-
-#ImageMe img{
-    width: 100%;
-    height: 90vh;
-}
-
-.Sobre{
-    margin-top: 5%;
-    height: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .sobreImagem{
